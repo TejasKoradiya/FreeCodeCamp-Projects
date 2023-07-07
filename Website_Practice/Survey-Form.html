@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+    <body>
+        <h1 id="title">General Anime Survey Form</h1>
+        <p id="description">This is a Survey Form For Someone who has watched a suitable amount of Japanese animated series.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Enter Your Name <input id="name" type="text" required placeholder="Monkey D Luffy"/></label>
+                <label id="email-label">Enter Your Email <input id="email" type="email" required placeholder="luffyispk@gmail.com"/></label>
+                <label id="number-label">Enter Your Age <input id="number" min="1" max="90" type="number" required placeholder="19"/></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">Select Your Favourite Genre
+                    <select id="dropdown" name="select-genre">
+                        <option value="">(select one)</option>
+                        <option value="1">Shounen</option>
+                        <option value="2">Seinen</option>
+                        <option value="3">Josei</option>
+                    </select>
+                </label>
+                <label>Select Your Favorite Anime Among The Following :</label>
+                <label for="anime1"><input id="anime1" name="Fav-anime" value="OnePiece" type="radio" class="inline"/>One Piece</label>
+                <label for="anime2"><input id="anime2" name="Fav-anime" type="radio" value="Naruto" class="inline"/>Naruto</label>
+                <label for="anime3"><input id="anime3" name="Fav-anime" type="radio" value="Bleach" class="inline"/>Bleach</label>
+            </fieldset>
+            <fieldset>
+                <label>Which Characters are fun to watch</label>
+                <label for="character1"><input id="character1" value="Luffy" type="checkbox" class="inline"/>Monkey D Luffy</label>
+                <label for="character2"><input id="character2" value="Zoro" type="checkbox" class="inline"/>Roronoa Zoro</label>
+                <label for="character3"><input id="character3" value="Sanji" type="checkbox" class="inline"/>Mr Prince Sanji</label>
+                <label for="character4"><input id="character4" value="Usopp" type="checkbox" class="inline"/>God Usopp</label>
+                <label for="text-area">Provide Your Thoughts
+                    <textarea id="text-area" rows="3" cols="30" placeholder="I like Luffy because of the humor....."></textarea>
+                </label>
+            </fieldset>
+            <input id="Submit" value="Submit" type="submit" />
+        </form>
+    </body>
+</html>
